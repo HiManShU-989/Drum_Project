@@ -11,32 +11,32 @@ document.addEventListener("keypress", function (event) {
 function makeSound(key) {
     switch (key) {
         case "w":
-            var audio = new Audio("tom-1.mp3");
-            audio.play();
+            var tom1 = new Audio("tom-1.mp3");
+            tom1.play();
             break;
         case "a":
-            var audio = new Audio("tom-2.mp3");
-            audio.play();
+            var tom2 = new Audio("tom-2.mp3");
+            tom2.play();
             break;
         case "s":
-            var audio = new Audio("tom-3.mp3");
-            audio.play();
+            var tom3 = new Audio("tom-3.mp3");
+            tom3.play();
             break;
         case "d":
-            var audio = new Audio("tom-4.mp3");
-            audio.play();
+            var tom4 = new Audio("tom-4.mp3");
+            tom4.play();
             break;
         case "j":
-            var audio = new Audio("snare.mp3");
-            audio.play();
+            var snare = new Audio("snare.mp3");
+            snare.play();
             break;
         case "k":
-            var audio = new Audio("kick-bass.mp3");
-            audio.play();
+            var kickBass = new Audio("kick-bass.mp3");
+            kickBass.play();
             break;
         case "l":
-            var audio = new Audio("crash.mp3");
-            audio.play();
+            var crash = new Audio("crash.mp3");
+            crash.play();
             break;
         default:
             alert("Beat the Drums!!!!");
