@@ -1,7 +1,14 @@
 for (var i = 0; i < document.querySelectorAll(".drum").length; i++) {
     document.querySelectorAll(".drum")[i].addEventListener("click", function () {
         var buttonInnerHTML = this.innerHTML;
-        switch (buttonInnerHTML) {
+        makeSound(buttonInnerHTML);
+    });
+}
+document.addEventListner("keypress",function(event){
+    makeSound(event.key);
+});
+function makeSound(key){
+    switch (buttonInnerHTML) {
             case "w":
                 var audio = new Audio("tom-1.mp3");
                 audio.play();
@@ -34,9 +41,7 @@ for (var i = 0; i < document.querySelectorAll(".drum").length; i++) {
                 alert("Beat the Drums!!!!");
                 break;
         }
-    });
 }
-
 
 
 
