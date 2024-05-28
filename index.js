@@ -4,8 +4,6 @@
       makeSound(buttonInnerHTML);
       buttonAnimation(buttonInnerHTML);
     });
-  });
-  document.querySelectorAll('.drum').forEach((drum) => {
     drum.addEventListener('keydown', function(event) {
       makeSound(event.key);
       buttonAnimation(event.key);
