@@ -4,11 +4,11 @@
       makeSound(buttonInnerHTML);
       buttonAnimation(buttonInnerHTML);
     });
-    drum.addEventListener('keydown', function(event) {
+  });
+ document.addEventListener('keydown', function(event) {
       makeSound(event.key);
       buttonAnimation(event.key);
     });
-  });
   function makeSound(key) {
     switch (key) {
       case 'w':
